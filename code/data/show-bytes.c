@@ -100,7 +100,7 @@ void show_twocomp()
 {
     /* $begin show-twocomp */
     short x = 12345; /* in binary: 00110000 00111001, i.e. 30 39*/
-    short mx = -x; /* in binary two's compliment: 11001111 11000111, i.e. CF C7*/
+    short mx = -x; /* in binary two's compliment: 11001111 11000111, i.e. CF C7, just negate every bit, then plus 1*/
 
     show_bytes((byte_pointer)&x, sizeof(short));
     show_bytes((byte_pointer)&mx, sizeof(short));
